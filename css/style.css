@@ -12,7 +12,7 @@
   text-decoration: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -177,7 +177,7 @@ body {
 
 .about .row .about-img {
   /* grow, shrink, img size (default 1 1 45rem) */
-  flex: 1 1 5rem;
+  flex: 1 1 45rem;
   margin: 0 auto;
 }
 
@@ -320,11 +320,10 @@ footer .credit {
   font-size: 75%;
 }
 
-footer .credit a{
+footer .credit a {
   color: var(--bg);
   font-weight: 700;
 }
-
 
 /* ============= */
 /* media queries */
@@ -385,10 +384,19 @@ footer .credit a{
     padding: 0;
   }
 
+  .about .row .about-img {
+    /* padding: auto; */
+    display: flex;
+  }
+
   .about .row .about-img img {
     height: 24rem;
+    width: auto;
+    /* height diatur di media tablet aja lah, kalo disini ngerusak margin asu */
     object-fit: cover;
     object-position: center;
+    margin: auto;
+    position: relative;
   }
 
   .about .row .content h3 {
